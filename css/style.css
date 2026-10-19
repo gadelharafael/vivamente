@@ -170,13 +170,12 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
 .logo-home{height:23mm;width:auto}
 .home h1{font:800 19pt var(--f-head);letter-spacing:-.02em;color:var(--ink);text-align:center;margin-top:3mm}
 .home .sub{text-align:center;font:700 8pt var(--f-head);letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-top:1.5mm}
-.grid{flex:1;align-content:space-evenly;padding-bottom:3mm;display:grid;grid-template-columns:repeat(4,1fr);gap:5.5mm 1.4mm;margin-top:2mm}
-.tile{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.8mm}
+.grid{flex:1;align-content:space-evenly;padding-bottom:3mm;display:flex;flex-wrap:wrap;justify-content:center;gap:5.5mm 0;margin-top:2mm}
+.tile{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.8mm;width:25%}
 .tile .tile-ico{width:19mm;height:19mm;border-radius:5.6mm;transition:transform .18s ease}
 .tile .tile-ico svg{width:28px;height:28px}
 .tile-lb{font:700 7.8pt/1.15 var(--f-head);color:var(--ink)}
 .tile:hover .tile-ico{transform:translateY(-2px) scale(1.05)}
-.grid .tile:last-child{grid-column:2 / span 2}
 .hint{font-size:8pt;color:var(--dim);text-align:center}
 
 /* ===== TELA (celular e computador): a página cabe inteira na janela, sem barra de rolagem =====
@@ -257,4 +256,25 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
     .gnav{gap:7px}.gnav button{padding:8px 12px;font-size:12.5px}.gnav button.gmusic{padding:8px 10px}.gnav .gpdf{padding:8px 10px}
   }
   @media (max-width:380px){.gnav button#gprev{padding:8px 9px}.gnav button#gnext{padding:8px 11px}}
+}
+
+/* aviso de propriedade intelectual e fotos do app */
+.copy{text-align:center;font:800 11pt/1.5 var(--f-head);color:var(--ink)}
+.card.ip p{font-size:9pt}
+.card.ip p strong{color:#d4573b}
+.photo.wide{max-width:100%}
+.side-txt{display:grid;gap:3mm}
+@media screen{
+  .copy{font-size:14px}
+  .card.ip p{font-size:12px}
+  .side-txt{gap:8px}
+  .tile{width:25%}
+  .pf{font-size:8px;letter-spacing:.08em;white-space:nowrap}
+  .photo.wide{flex:0 0 auto}
+}
+/* PDF: menos sombras desfocadas e filtros (evitam transformar os ícones em imagens rasterizadas) */
+@media print{
+  .tile-ico{box-shadow:none!important;outline:1.2mm solid color-mix(in srgb,var(--c1) 22%,transparent);outline-offset:0}
+  .tile-ico svg{filter:none!important}
+  .card,.step,.shot,.pair>div,.quote,.axes div,.destaque,.pilllink,.wapill,.phone{box-shadow:none!important}
 }
