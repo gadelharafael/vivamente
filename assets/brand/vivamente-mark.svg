@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 200" role="img" aria-label="Vivamente">
+  <defs>
+    <linearGradient id="vmHead" x1="0.15" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#27977f"/>
+      <stop offset="1" stop-color="#0c6063"/>
+    </linearGradient>
+    <linearGradient id="vmLeft" x1="0.05" y1="0.1" x2="0.9" y2="0.95">
+      <stop offset="0" stop-color="#34b085"/>
+      <stop offset="0.55" stop-color="#23907a"/>
+      <stop offset="1" stop-color="#0b6468"/>
+    </linearGradient>
+    <linearGradient id="vmRight" x1="0.95" y1="0.1" x2="0.1" y2="0.95">
+      <stop offset="0" stop-color="#9a8bdc"/>
+      <stop offset="0.5" stop-color="#7569c8"/>
+      <stop offset="1" stop-color="#4a49ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="106" cy="49" r="30.5" fill="url(#vmHead)"/>
+  <path d="M83 196 C60 190 28 160 15 118 C8 96 8 76 14 70 C20 64 30 66 40 69 C80 82 102 115 103 150 L103 196 Z" fill="url(#vmLeft)"/>
+  <path d="M107 196 L107 150 C108 115 130 82 170 69 C180 66 190 64 196 70 C202 76 202 96 195 118 C182 160 150 190 125 196 Z" fill="url(#vmRight)"/>
+</svg>
