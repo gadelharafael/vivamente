@@ -288,3 +288,7 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
   .phones{flex:0 0 auto;gap:2px}
   .cut figcaption{font-size:11px;margin-top:0}
 }
+
+/* aviso de emergência (CVV / SAMU) */
+.note.sos{background:#fde8e6;border-color:#f6b9c6;color:#9b1740;font-weight:700}
+.note.sos svg{color:#e5486a}
