@@ -278,3 +278,13 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
   .tile-ico svg{filter:none!important}
   .card,.step,.shot,.pair>div,.quote,.axes div,.destaque,.pilllink,.wapill,.phone{box-shadow:none!important}
 }
+
+/* aparelhos do app (recorte com fundo transparente e sombra) */
+.phones{display:flex;justify-content:center;align-items:flex-start;gap:2mm}
+.cut{margin:0;width:50%;min-width:0;text-align:center}
+.cut img{display:block;width:100%;height:auto}
+.cut figcaption{font:800 8.6pt var(--f-head);color:var(--teal);margin-top:0;letter-spacing:.02em}
+@media screen{
+  .phones{flex:0 0 auto;gap:2px}
+  .cut figcaption{font-size:11px;margin-top:0}
+}
