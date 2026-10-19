@@ -292,3 +292,28 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
 /* aviso de emergência (CVV / SAMU) */
 .note.sos{background:#fde8e6;border-color:#f6b9c6;color:#9b1740;font-weight:700}
 .note.sos svg{color:#e5486a}
+
+/* página do termo de consentimento */
+.card.aviso{background:#fff3f5;border-color:#f6b9c6}
+.card.aviso p strong{color:#c2184a}
+.leis-box{border:1px solid var(--line);border-radius:4mm;background:#fff;padding:3.4mm 3.8mm}
+.leis-box>b{display:block;font:800 10pt var(--f-head);color:var(--ink);margin-bottom:2mm}
+.chips.leis{justify-content:flex-start;gap:1.4mm}
+.chips.leis span{font:700 6.8pt var(--f-head);letter-spacing:.02em;text-transform:none;padding:1mm 2.4mm;color:#5b2d82;background:#f3eaff;border:1px solid #e0cdf6}
+.pilllink.big{width:100%;justify-content:center;font-size:9.4pt;padding:3mm 5mm;color:#fff;background:linear-gradient(135deg,#7b3fb0,#a35fd1);border:0;box-shadow:0 10px 20px -12px rgba(123,63,176,.8)}
+.pilllink.big.alt{color:#5b2d82;background:#fff;border:1px solid #d9c3f0;box-shadow:none}
+.note.aviso-nota{background:#fff3f5;border-color:#f6b9c6;color:#9b1740}
+.note.aviso-nota svg{color:#e5486a}
+@media screen{
+  .leis-box{padding:9px 11px;border-radius:12px}.leis-box>b{font-size:13px;margin-bottom:6px}
+  .chips.leis span{font-size:9.5px;padding:3px 8px}
+  .pilllink.big{font-size:12.5px;padding:10px 14px}
+}
+
+/* telas: fotos decorativas com altura limitada (o conteúdo de texto cabe sem reduzir a escala) */
+@media screen{
+  .mural .photo{display:flex;justify-content:center;background:none}
+  .mural .photo img{width:auto;max-width:100%;max-height:clamp(70px,14vh,150px);height:auto}
+  .duo .photo{display:flex;justify-content:center;align-items:center;background:none}
+  .duo .photo img{width:auto;max-width:100%;max-height:clamp(120px,23vh,250px);height:auto}
+}

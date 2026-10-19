@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termo de consentimento — Vivamente</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/brand/vivamente-app-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#073b3a;--teal:#0f6f6a;--green:#1f9d82;--mint:#d9f1ea;--rose:#c2184a;--line:#dcebe6;--txt:#27403d;--dim:#6b8a85;--f-head:"Plus Jakarta Sans","Inter",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.55 Inter,"Segoe UI",system-ui,sans-serif;color:var(--txt);background:linear-gradient(170deg,#f2fbf8,#f6f3fd)}
+.pag{max-width:820px;margin:0 auto;padding:16px 14px 90px}
+.topo{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.topo a.voltar{font:700 13px var(--f-head);color:var(--teal);background:var(--mint);border:1px solid #c5e8de;border-radius:99px;padding:6px 12px;text-decoration:none}
+.topo img{height:34px}
+.doc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 20px;box-shadow:0 16px 40px -24px rgba(15,111,106,.5)}
+h1{font:800 22px/1.2 var(--f-head);color:var(--ink);margin:6px 0 2px;text-align:center}
+.sub{text-align:center;color:var(--dim);margin:0 0 14px}
+h2{font:800 16px var(--f-head);color:var(--teal);margin:20px 0 6px}
+h3{font:800 16px var(--f-head);color:var(--teal);margin:18px 0 6px}
+p{margin:0 0 8px;text-align:justify}
+.aviso{border:2px solid var(--rose);background:#fff3f5;border-radius:14px;padding:12px 14px;margin:14px 0}
+.aviso h2{color:var(--rose);margin:0 0 6px}
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grade .l{grid-column:1/-1}
+label.f{display:block;font:700 11px var(--f-head);color:var(--dim);letter-spacing:.04em;text-transform:uppercase}
+label.f input{display:block;width:100%;margin-top:3px;font:500 15px Inter,sans-serif;color:var(--ink);padding:9px 10px;border:1px solid #c5e0d8;border-radius:10px;background:#fbfefd}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;margin:6px 0;border:1px solid var(--line);border-radius:12px;background:#f4fbf8;font-size:14px;cursor:pointer}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--green);flex:none}
+.ciente{background:#fff8e6;border-color:#f0d58a}
+ul.leis{padding-left:18px;margin:6px 0}ul.leis li{margin:0 0 6px;font-size:14px}
+.ass{margin-top:14px}
+.ass .cx{border:1.5px dashed #9fcfc6;border-radius:12px;background:#fcfffe;touch-action:none}
+canvas{display:block;width:100%;height:150px}
+.leg{font-size:12px;color:var(--dim);margin:4px 0 10px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:16px 0 4px}
+.btn{font:700 14px var(--f-head);border:0;border-radius:12px;padding:12px 18px;cursor:pointer;text-decoration:none;display:inline-block}
+.pri{color:#fff;background:linear-gradient(135deg,#0b5f63,#1c8f7b 58%,#3fb48f)}.sec{color:var(--teal);background:#fff;border:1px solid #bfe5d9}
+.limpar{font:700 12px var(--f-head);color:var(--teal);background:none;border:0;cursor:pointer;text-decoration:underline}
+.priv{font-size:12px;color:var(--dim);text-align:center;margin-top:10px}
+.rod{text-align:center;font-size:11px;color:var(--dim);margin-top:14px}
+.assfinal{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px}
+.assfinal .box{border-bottom:1px solid #6b8a85;min-height:54px;display:flex;align-items:flex-end;justify-content:center}
+.assfinal small{display:block;text-align:center;color:var(--dim);font-size:11px;margin-top:3px}
+@media(max-width:560px){.grade{grid-template-columns:1fr}.assfinal{grid-template-columns:1fr}}
+@media print{
+  @page{size:A4;margin:14mm}
+  body{background:#fff;font-size:10.5pt}
+  .pag{padding:0;max-width:none}
+  .topo,.btns,.priv,.limpar,.leg.tela{display:none!important}
+  .doc{border:0;box-shadow:none;padding:0}
+  label.f input{border:0;border-bottom:1px solid #6b8a85;border-radius:0;background:none;padding:2px 0;font-size:10.5pt}
+  .chk{break-inside:avoid;background:none}
+  .aviso,.ass,.assfinal,h2,h3{break-inside:avoid}
+  h2,h3{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<main class="pag">
+  <div class="topo"><a class="voltar" href="./">← Voltar à apresentação</a><img src="assets/brand/vivamente-logo-tagline.png" alt="Vivamente"></div>
+  <form class="doc" id="form" onsubmit="return false">
+    <h1>Termo de Consentimento Livre e Esclarecido e Ciência de Uso do Aplicativo Vivamente</h1>
+    <p class="sub">Imagens, voz, localização e dados de saúde — autorização do paciente</p>
+
+    <h2>1. Identificação</h2>
+    <div class="grade">
+      <label class="f l">Paciente (nome completo)<input name="nome" autocomplete="name"></label>
+      <label class="f">CPF<input name="cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00"></label>
+      <label class="f">Data de nascimento<input name="nasc" type="date"></label>
+      <label class="f">Telefone<input name="tel" inputmode="tel" placeholder="(61) 99999-8888"></label>
+      <label class="f">Endereço<input name="end" autocomplete="street-address"></label>
+      <label class="f l">Responsável legal / contato de emergência (nome, parentesco e telefone)<input name="resp"></label>
+      <label class="f l">Médico(a) / psicólogo(a) responsável e clínica<input name="prof"></label>
+    </div>
+    <p class="leg">Se o paciente tem menos de 18 anos ou não tem capacidade civil plena, o responsável legal preenche e assina também.</p>
+
+    <h3>2. O que é o Vivamente</h3><p>O Vivamente é um aplicativo (para o paciente) e uma central (para a equipe) que ajudam no acompanhamento da saúde mental. Permite o <b>check-in diário</b> (perguntas, escrita, foto e voz), a comparação com o <b>perfil saudável</b> cadastrado pela clínica, o <b>botão de ajuda</b>, o envio da <b>localização</b> do celular e a troca de mensagens com a equipe.</p>
+
+    <div class="aviso"><h2>3. Aviso importante: o Vivamente não garante a prevenção do suicídio</h2><p>O Vivamente é uma ferramenta de <b>apoio ao tratamento</b>. Ele <b>não garante</b> a prevenção de suicídio, de automutilação, de crises ou de qualquer outro desfecho. <b>Nada garante que o suicídio não ocorra.</b></p><p>O aplicativo <b>não substitui</b> consultas, medicação, acompanhamento profissional nem serviços de emergência. Ele pode falhar (sem internet, sem bateria, sem GPS, atrasos ou erros de classificação) e suas análises são apenas um indicativo: a decisão clínica é sempre da equipe profissional.</p><p>Em risco imediato, procure ajuda: <b>CVV 188</b> (24 h, gratuito), <b>SAMU 192</b>, <b>Polícia Militar 190</b> ou o pronto-socorro mais próximo.</p></div>
+
+    <h2>4. Autorizações (marque cada uma que concordar)</h2>
+    <label class="chk"><input type="checkbox" name="aut_dados"><span><b>Dados pessoais e de saúde</b> — Autorizo a coleta, o armazenamento e o uso dos meus dados pessoais e de saúde (dados sensíveis, art. 11 da LGPD) para o meu acompanhamento e tratamento.</span></label><label class="chk"><input type="checkbox" name="aut_imagens"><span><b>Imagens (selfie e foto)</b> — Autorizo o uso da minha imagem (selfie e foto de perfil) no check-in, no cadastro e na comparação com o meu perfil saudável.</span></label><label class="chk"><input type="checkbox" name="aut_voz"><span><b>Voz</b> — Autorizo a gravação da minha voz e a transcrição da minha fala no check-in e no perfil saudável.</span></label><label class="chk"><input type="checkbox" name="aut_localizacao"><span><b>Localização (GPS do celular)</b> — Autorizo o envio e o uso da localização do meu celular no check-in, no botão de ajuda e quando a equipe solicitar a minha localização, para me encontrar e prestar socorro.</span></label><label class="chk"><input type="checkbox" name="aut_contatos"><span><b>Contato com responsável e equipe</b> — Autorizo que a equipe clínica autorizada e as pessoas que indiquei como contato de emergência/responsável sejam acionadas e recebam as informações necessárias em caso de risco.</span></label>
+
+    <h3>5. Finalidade, compartilhamento e guarda dos dados</h3><p>Os dados são usados <b>somente</b> para acompanhar e cuidar de mim, por pessoas autorizadas, com sigilo profissional. Não são vendidos nem usados para propaganda.</p><p>Quando houver risco à minha vida, a lei permite o tratamento de dados para a <b>proteção da vida</b> e a <b>tutela da saúde</b> (LGPD, art. 11, II, "e" e "f"). A clínica pode ter ainda <b>obrigação legal de notificação</b> de casos de violência autoprovocada (Lei nº 13.819/2019), de forma sigilosa.</p><p>Os dados ficam guardados pelo tempo necessário ao tratamento e ao cumprimento de obrigações legais (inclusive de prontuário), com medidas de segurança técnicas e administrativas.</p><h3>6. Meus direitos e a revogação</h3><p>Posso, a qualquer momento e sem custo: confirmar a existência do tratamento, acessar, corrigir, pedir anonimização, eliminação ou portabilidade dos dados e <b>revogar qualquer autorização</b> (LGPD, arts. 8º, §5º, e 18), sem prejuízo do meu tratamento. A revogação pode limitar funções do aplicativo (por exemplo, sem localização a equipe não consegue me encontrar).</p><p>Contato do encarregado de dados (DPO) / clínica: ______________________________________________</p><h3>7. Meus compromissos</h3><p>Manter meus dados e os de meus contatos atualizados; manter internet, GPS e notificações ativos quando possível; não compartilhar meu acesso; usar o aplicativo de boa-fé; e <b>procurar atendimento de emergência</b> sempre que me sentir em perigo.</p>
+
+    <h2>8. Legislação relacionada ao tema</h2>
+    <ul class="leis"><li><b>Constituição Federal de 1988</b> — art. 5º, X (intimidade e vida privada) e LXXIX (proteção de dados pessoais, EC 115/2022); art. 196 (direito à saúde).</li><li><b>Lei nº 13.709/2018 — LGPD</b> — dados pessoais e sensíveis (arts. 5º, 7º, 11), crianças e adolescentes (art. 14), consentimento (art. 8º), direitos do titular (art. 18), segurança (art. 46).</li><li><b>Lei nº 10.216/2001</b> — direitos das pessoas com transtornos mentais e redirecionamento do modelo de atenção em saúde mental.</li><li><b>Lei nº 13.819/2019</b> — Política Nacional de Prevenção da Automutilação e do Suicídio (inclui notificação sigilosa).</li><li><b>Lei nº 14.510/2022</b> — telessaúde (prática de saúde a distância).</li><li><b>Lei nº 13.787/2018</b> — prontuário do paciente em meio digital.</li><li><b>Lei nº 12.965/2014 — Marco Civil da Internet</b> — direitos e deveres no uso da internet, privacidade e proteção dos registros.</li><li><b>Lei nº 8.069/1990 — ECA</b> — proteção integral de crianças e adolescentes (consentimento do responsável).</li><li><b>Lei nº 13.146/2015</b> — Estatuto da Pessoa com Deficiência (capacidade civil e apoio à tomada de decisão).</li><li><b>Lei nº 10.406/2002 — Código Civil</b> — capacidade civil (arts. 3º a 5º) e direitos da personalidade, inclusive uso da imagem (arts. 11 a 21).</li><li><b>Decreto-Lei nº 2.848/1940 — Código Penal</b> — violação de segredo (arts. 153 e 154).</li><li><b>Resolução CFM nº 2.314/2022</b> — telemedicina; <b>Resolução CFM nº 2.217/2018</b> — Código de Ética Médica (sigilo).</li><li><b>Resoluções do CFP nº 10/2005 e nº 11/2018</b> — Código de Ética Profissional do Psicólogo (sigilo) e serviços psicológicos por tecnologias da informação.</li><li><b>Leis nº 9.609/1998, 9.610/1998 e 9.279/1996</b> — programa de computador, direitos autorais e propriedade industrial (aplicativo registrado no INPI).</li></ul>
+
+    <h2>9. Declaração e assinaturas</h2>
+    <p>Declaro que li (ou que li para mim) este termo, que tive a oportunidade de esclarecer minhas dúvidas, que entendi que o Vivamente é um <b>apoio ao tratamento e não garante a prevenção do suicídio</b>, e que <b>autorizo livremente</b>, nos termos acima, o uso das minhas imagens, voz, localização e demais dados.</p>
+    <label class="chk ciente"><input type="checkbox" name="ciente" id="ciente"><span><b>Li e estou ciente</b> de todo o conteúdo deste termo, inclusive de que o Vivamente <b>não garante a prevenção do suicídio</b>.</span></label>
+    <div class="grade">
+      <label class="f">Local<input name="local" placeholder="Cidade/UF"></label>
+      <label class="f">Data<input name="data" type="date" id="data"></label>
+    </div>
+    <div class="ass">
+      <label class="f">Assinatura do paciente (desenhe com o dedo ou o mouse)</label>
+      <div class="cx"><canvas id="c1"></canvas></div>
+      <button type="button" class="limpar" data-limpar="c1">Limpar assinatura</button>
+    </div>
+    <div class="ass">
+      <label class="f">Assinatura do responsável legal (se houver)</label>
+      <div class="cx"><canvas id="c2"></canvas></div>
+      <button type="button" class="limpar" data-limpar="c2">Limpar assinatura</button>
+    </div>
+    <div class="assfinal"><div><div class="box"></div><small>Profissional / clínica (nome, CRM/CRP e carimbo)</small></div><div><div class="box"></div><small>Testemunha (opcional) — nome e CPF</small></div></div>
+
+    <div class="btns">
+      <button class="btn pri" id="imprimir" type="button">Imprimir / salvar em PDF</button>
+      <a class="btn sec" href="termo-de-consentimento.pdf" download>Baixar termo em branco (PDF)</a>
+    </div>
+    <p class="priv">Este formulário funciona no seu aparelho: os dados e a assinatura <b>não são enviados</b> a nenhum servidor. Para guardar, imprima ou salve em PDF.</p>
+    <p class="rod">© Rafael Gadelha · Vivamente registrado no INPI · Proibida a cópia</p>
+  </form>
+</main>
+<script>
+(function () {
+  var hoje = new Date(), z = function (n) { return String(n).padStart(2, "0"); };
+  document.getElementById("data").value = hoje.getFullYear() + "-" + z(hoje.getMonth() + 1) + "-" + z(hoje.getDate());
+
+  function prepara(c) {
+    var r = c.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+    c.width = Math.round(r.width * d); c.height = Math.round(r.height * d);
+    var x = c.getContext("2d"); x.scale(d, d); x.lineWidth = 2.2; x.lineCap = "round"; x.lineJoin = "round"; x.strokeStyle = "#073b3a";
+    var desenhando = false, ult = null;
+    function pos(e) { var b = c.getBoundingClientRect(); return { x: e.clientX - b.left, y: e.clientY - b.top }; }
+    c.addEventListener("pointerdown", function (e) { desenhando = true; ult = pos(e); c.setPointerCapture(e.pointerId); x.beginPath(); x.moveTo(ult.x, ult.y); x.lineTo(ult.x + .1, ult.y + .1); x.stroke(); });
+    c.addEventListener("pointermove", function (e) { if (!desenhando) return; var p = pos(e); x.beginPath(); x.moveTo(ult.x, ult.y); x.lineTo(p.x, p.y); x.stroke(); ult = p; });
+    ["pointerup", "pointercancel", "pointerleave"].forEach(function (n) { c.addEventListener(n, function () { desenhando = false; }); });
+    c._limpar = function () { x.save(); x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, c.width, c.height); x.restore(); };
+  }
+  var cs = [document.getElementById("c1"), document.getElementById("c2")];
+  cs.forEach(prepara);
+  Array.prototype.forEach.call(document.querySelectorAll("[data-limpar]"), function (b) { b.onclick = function () { document.getElementById(b.dataset.limpar)._limpar(); }; });
+
+  // CPF e telefone com máscara simples
+  var cpf = document.querySelector("[name=cpf]");
+  cpf.addEventListener("input", function () { var d = cpf.value.replace(/\D/g, "").slice(0, 11); cpf.value = d.replace(/(\d{3})(\d)/, "$1.$2").replace(/(\d{3})(\d)/, "$1.$2").replace(/(\d{3})(\d{1,2})$/, "$1-$2"); });
+
+  document.getElementById("imprimir").onclick = function () {
+    if (!document.getElementById("ciente").checked) { alert("Para imprimir o termo assinado, marque \"Li e estou ciente\"."); return; }
+    window.print();
+  };
+})();
+</script>
+</body>
+</html>
