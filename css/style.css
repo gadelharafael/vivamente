@@ -317,3 +317,71 @@ svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;str
   .duo .photo{display:flex;justify-content:center;align-items:center;background:none}
   .duo .photo img{width:auto;max-width:100%;max-height:clamp(120px,23vh,250px);height:auto}
 }
+
+/* Neon suave + nitidez — logo Vivamente; respiro no topo (a página não cola na borda) */
+.logo-home,
+.logo-ph,
+.leaf {
+  image-rendering: -webkit-optimize-contrast;
+  filter: drop-shadow(0 0 2px rgba(74, 205, 176, 0.9))
+    drop-shadow(0 0 9px rgba(74, 205, 176, 0.65))
+    drop-shadow(0 0 20px rgba(123, 102, 201, 0.45));
+}
+@media screen{
+  body{padding-top:10px!important}
+}
+
+/* Acabamento premium (somente tela): ícones com neon, brilho vítreo e traço nítido */
+@media screen{
+  .tile-ico{
+    background:
+      linear-gradient(160deg,rgba(255,255,255,.38) 0%,rgba(255,255,255,0) 46%),
+      linear-gradient(145deg,color-mix(in srgb,var(--c1) 70%,var(--c2)),var(--c2));
+    box-shadow:
+      0 0 0 1px color-mix(in srgb,var(--c1) 70%,#fff),
+      0 0 14px 1px color-mix(in srgb,var(--c1) 70%,transparent),
+      0 0 30px 2px color-mix(in srgb,var(--c2) 38%,transparent),
+      0 12px 22px -10px color-mix(in srgb,var(--c2) 90%,transparent),
+      inset 0 1px 0 rgba(255,255,255,.65),
+      inset 0 -6px 12px -6px rgba(0,0,0,.18);
+  }
+  .tile-ico svg{
+    stroke-width:2;
+    filter:drop-shadow(0 0 3px rgba(255,255,255,.85)) drop-shadow(0 0 7px color-mix(in srgb,var(--c1) 80%,transparent));
+  }
+  .tile:hover .tile-ico{
+    box-shadow:
+      0 0 0 1px #fff,
+      0 0 20px 3px color-mix(in srgb,var(--c1) 85%,transparent),
+      0 0 40px 4px color-mix(in srgb,var(--c2) 50%,transparent),
+      inset 0 1px 0 rgba(255,255,255,.7);
+  }
+  .back svg,.gnav svg{filter:drop-shadow(0 0 4px rgba(74,205,176,.7))}
+  .back,.gnav button{box-shadow:0 0 12px -2px rgba(74,205,176,.55),0 8px 18px -10px rgba(15,111,106,.6)}
+  .gnav button#gnext{box-shadow:0 0 16px 0 rgba(63,180,143,.7),0 8px 18px -8px rgba(15,111,106,.7)}
+}
+
+/* 4 ícones por linha + neon mais forte */
+.grid{column-gap:0!important}
+.tile{width:25%!important;min-width:0}
+.tile-lb{font-size:clamp(9.5px,2.6vw,11px)}
+@media screen{
+  .logo-home,.logo-ph,.leaf{
+    filter:drop-shadow(0 0 2px rgba(110,235,205,1))
+      drop-shadow(0 0 8px rgba(74,205,176,.95))
+      drop-shadow(0 0 18px rgba(74,205,176,.75))
+      drop-shadow(0 0 32px rgba(123,102,201,.6));
+  }
+  .tile-ico{
+    box-shadow:
+      0 0 0 1px color-mix(in srgb,var(--c1) 85%,#fff),
+      0 0 10px 2px color-mix(in srgb,var(--c1) 90%,transparent),
+      0 0 24px 4px color-mix(in srgb,var(--c1) 70%,transparent),
+      0 0 44px 6px color-mix(in srgb,var(--c2) 48%,transparent),
+      inset 0 1px 0 rgba(255,255,255,.7),
+      inset 0 -6px 12px -6px rgba(0,0,0,.18);
+  }
+  .tile-ico svg{
+    filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px color-mix(in srgb,var(--c1) 95%,transparent));
+  }
+}

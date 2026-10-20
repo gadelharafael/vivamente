@@ -34,7 +34,7 @@
     var nav = document.querySelector(".gnav");
     var navH = nav ? nav.offsetHeight : 64;
     var availW = window.innerWidth - 12;
-    var availH = window.innerHeight - navH - 10;
+    var availH = window.innerHeight - navH - 22;
     var body = a.querySelector(".pbody") || a;
     var z = 1, ok = false;
     for (; z >= 0.58; z = Math.round((z - 0.04) * 100) / 100) {
